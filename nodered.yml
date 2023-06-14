@@ -1,0 +1,16 @@
+version: "2"
+
+services:
+
+  nodered:
+    build:
+      context: ./docker/nodered
+    image: campusiot/nodered:latest
+    environment:
+      NODE_OPTIONS: --max_old_space_size=512
+      FLOWS: flow.json
+    volumes:
+       - /data/nodered/:/data/:rw
+    ports:
+      - 1880:1880
+    restart: unless-stopped

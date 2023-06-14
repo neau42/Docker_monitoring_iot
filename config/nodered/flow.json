@@ -1,0 +1,1262 @@
+[
+    {
+        "id": "74429ff4.4ff848",
+        "type": "tab",
+        "label": "Collect Messages",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "b23a6a86.69b218",
+        "type": "tab",
+        "label": "Payloard Codec",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "8ef8462d.3e5728",
+        "type": "tab",
+        "label": "Save Data",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "f75893bf.fe0438",
+        "type": "mqtt-broker",
+        "name": "campusiot",
+        "broker": "lns.campusiot.imag.fr",
+        "port": "8883",
+        "tls": "e038e18.c53e52",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e038e18.c53e52",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": false,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "70b21447.a18194",
+        "type": "influxdb",
+        "hostname": "influxdb",
+        "port": "8086",
+        "protocol": "http",
+        "database": "lorawan",
+        "name": "",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "1.x",
+        "url": "",
+        "rejectUnauthorized": false
+    },
+    {
+        "id": "fcf643ba.090e28",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#072cc5",
+                "baseFont": "Arial,Arial,Helvetica,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#072cc5",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#072cc5",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#000000",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#214bf7",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#072cc5",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Arial,Arial,Helvetica,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "CampusIoT Demo Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "215c037c.3ca334",
+        "type": "ui_tab",
+        "name": "Adeunis FTD 20CBA",
+        "icon": "fa-map-pin",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2466be76.6abaea",
+        "type": "ui_tab",
+        "name": "Semtech LoRaMote",
+        "icon": "fa-map-pin",
+        "order": 8
+    },
+    {
+        "id": "b87f6b0d.ddea08",
+        "type": "ui_tab",
+        "name": "DemoMote 4B9",
+        "icon": "fa-map-pin",
+        "order": 6
+    },
+    {
+        "id": "58cdc159.4c94d8",
+        "type": "ui_tab",
+        "name": "Adeunis Pulse",
+        "icon": "fa-tachometer",
+        "order": 10
+    },
+    {
+        "id": "a3ecc49f.0a7438",
+        "type": "ui_tab",
+        "name": "Adeunis Sensor",
+        "icon": "fa-wifi",
+        "order": 11
+    },
+    {
+        "id": "9f9c09c9.ecc1",
+        "type": "ui_tab",
+        "name": "Adeunis St Cassien",
+        "icon": "fa-thermometer-half",
+        "order": 12
+    },
+    {
+        "id": "eeff4a06.3811c",
+        "type": "ui_tab",
+        "name": "Asset Tracking",
+        "icon": "fa-globe",
+        "order": 1
+    },
+    {
+        "id": "d5a220d7.00cbe8",
+        "type": "ui_tab",
+        "name": "Sentrius RICM",
+        "icon": "fa-thermometer-half",
+        "order": 14
+    },
+    {
+        "id": "3623ab78.92cd44",
+        "type": "ui_tab",
+        "name": "Elsys ELT2",
+        "icon": "fa-thermometer-half",
+        "order": 17
+    },
+    {
+        "id": "5e8eebf9.135b34",
+        "type": "ui_tab",
+        "name": "Senlab H",
+        "icon": "fa-thermometer-half",
+        "order": 18
+    },
+    {
+        "id": "91380a8a.826d28",
+        "type": "ui_tab",
+        "name": "Elsys ELT1",
+        "icon": "fa-thermometer-half",
+        "order": 16
+    },
+    {
+        "id": "d81cc3c3.3430e8",
+        "type": "ui_tab",
+        "name": "Elsys ERS",
+        "icon": "fa-users",
+        "order": 20
+    },
+    {
+        "id": "8dfc9a8e.e0f66",
+        "type": "ui_tab",
+        "name": "Ascoel Contact TH",
+        "icon": "fa-home",
+        "order": 22
+    },
+    {
+        "id": "ac77a9d7.8439e",
+        "type": "ui_tab",
+        "name": "Weather 2",
+        "icon": "fa-cloud",
+        "order": 3
+    },
+    {
+        "id": "65465f24.1c2d98",
+        "type": "ui_tab",
+        "name": "Ascoel Contact",
+        "icon": "fa-home",
+        "order": 23
+    },
+    {
+        "id": "3df1476f.717ab",
+        "type": "ui_tab",
+        "name": "Allora Pirio",
+        "icon": "fa-users",
+        "order": 21
+    },
+    {
+        "id": "1ecd771c.32a901",
+        "type": "ui_tab",
+        "name": "Allora Humidi",
+        "icon": "fa-thermometer-half",
+        "order": 19
+    },
+    {
+        "id": "9fc70ae6.f8d428",
+        "type": "ui_tab",
+        "name": "1M2M ED1608",
+        "icon": "fa-map-pin",
+        "order": 9
+    },
+    {
+        "id": "8e6519c6.0c437",
+        "type": "ui_tab",
+        "name": "Security",
+        "icon": "fa-home",
+        "order": 4
+    },
+    {
+        "id": "d1b180dc.b6542",
+        "type": "ui_tab",
+        "name": "Sentrius St Cassien",
+        "icon": "fa-thermometer-half",
+        "order": 15
+    },
+    {
+        "id": "42a2a252.ac53dc",
+        "type": "ui_tab",
+        "name": "DemoMote 4B6",
+        "icon": "fa-map-pin",
+        "order": 7
+    },
+    {
+        "id": "499c1c093f884d28",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": false,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "e7d58ddf.92851",
+        "type": "mqtt in",
+        "z": "74429ff4.4ff848",
+        "name": "Application Rx",
+        "topic": "application/+/device/+/rx",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f75893bf.fe0438",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 180,
+        "y": 180,
+        "wires": [
+            [
+                "307acbac.e21424"
+            ]
+        ]
+    },
+    {
+        "id": "307acbac.e21424",
+        "type": "json",
+        "z": "74429ff4.4ff848",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 370,
+        "y": 180,
+        "wires": [
+            [
+                "52d5f4c7.0c232c",
+                "6585962c0f5072b8"
+            ]
+        ]
+    },
+    {
+        "id": "16cc577e.d91489",
+        "type": "link out",
+        "z": "74429ff4.4ff848",
+        "name": "application",
+        "links": [
+            "27a7d2a5.b405a6",
+            "590961be.974788",
+            "69db27cf.f9d1d8",
+            "833669c2.795cb8"
+        ],
+        "x": 1095,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "fbc7b04.aab725",
+        "type": "debug",
+        "z": "74429ff4.4ff848",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1160,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "c6b1281a.da8218",
+        "type": "function",
+        "z": "74429ff4.4ff848",
+        "name": "add radio",
+        "func": "\n\nfunction getSubBandsEU868(frequency) {\n    if(frequency>=863000000 && frequency<868000000) {\n        return \"g\";\n    } else if(frequency>=868000000 && frequency<868600000) {\n        return \"g1\";\n    } else if(frequency>=868700000 && frequency<869200000) {\n        return \"g2\";\n    } else if(frequency>=869400000 && frequency<869650000) {\n        return \"g3\";\n    } else if(frequency>=869700000 && frequency<870000000) {\n        return \"g4\";\n    } else {\n        return undefined;\n    }\n    /* Duty Cycle */\n    /*\n    g (863.0 – 868.0 MHz): 1%\n    g1 (868.0 – 868.6 MHz): 1%\n    g2 (868.7 – 869.2 MHz): 0.1%\n    g3 (869.4 – 869.65 MHz): 10%\n    g4 (869.7 – 870.0 MHz): 1%\n    */\n}\n\nvar p = msg.payload;\n\nvar rxInfo = p.rxInfo;\n\nvar ri = undefined;\n\nrxInfo.forEach(function(e) {\n  if(ri === undefined) {\n      ri = e;\n  } else if(e.rssi > ri.rssi) {\n      ri = e;\n  }\n});\n\nri.date = Date.now();\nri.dr = p.txInfo.dr;\nri.frequency = p.txInfo.frequency;\nri.subband = getSubBandsEU868(p.txInfo.frequency);\n// Can not compute timeonair without the frame length\n//ri.toa = TimeOnAir.getLoRaWANTimeOnAir(size, 0, ri.dr)\n\n\nri.redundancy = rxInfo.length;\n\nmsg.payload.radio = ri;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 80,
+        "wires": [
+            [
+                "16cc577e.d91489",
+                "fbc7b04.aab725"
+            ]
+        ]
+    },
+    {
+        "id": "52d5f4c7.0c232c",
+        "type": "function",
+        "z": "74429ff4.4ff848",
+        "name": "convert frame payload and filter by applicationID ELSYS",
+        "func": "if(msg.payload.data){\n    msg.payload.frmPayload = Buffer.from(msg.payload.data, 'base64');\n    msg.payload.size = msg.payload.frmPayload.length;\n} else {\n    msg.payload.size = 0;\n}\n\n// filtre sur le applicationID pour observer uniquement les capteurs \"ers co2\" de l'im2ag\nvar elsysApplicationID = '153';\nif (msg.payload.applicationID != elsysApplicationID){\n    node.log(msg.payload.applicationID);\n    return undefined;\n}\n//\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 80,
+        "wires": [
+            [
+                "c6b1281a.da8218"
+            ]
+        ]
+    },
+    {
+        "id": "7fd25101734a66be",
+        "type": "debug",
+        "z": "74429ff4.4ff848",
+        "name": "after filter applicationID",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1050,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "6585962c0f5072b8",
+        "type": "function",
+        "z": "74429ff4.4ff848",
+        "name": "convert frame payload and filter by applicationID AURA",
+        "func": "if(msg.payload.data){\n    msg.payload.frmPayload = Buffer.from(msg.payload.data, 'base64');\n    msg.payload.size = msg.payload.frmPayload.length;\n} else {\n    msg.payload.size = 0;\n}\n\n// filtre sur le applicationID pour observer uniquement les capteurs \"AURA co2\" de l'im2ag\nvar auraApplicationID = '273'\nif (msg.payload.applicationID != auraApplicationID){\n    node.log(msg.payload.applicationID);\n    return undefined;\n}\n//\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 280,
+        "wires": [
+            [
+                "7fd25101734a66be",
+                "769756dcbedeabf3"
+            ]
+        ]
+    },
+    {
+        "id": "39d74fedaf03d179",
+        "type": "link out",
+        "z": "74429ff4.4ff848",
+        "name": "",
+        "links": [
+            "f0039d996a2cd5e0"
+        ],
+        "x": 1175,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "769756dcbedeabf3",
+        "type": "function",
+        "z": "74429ff4.4ff848",
+        "name": "add radio",
+        "func": "\n\nfunction getSubBandsEU868(frequency) {\n    if(frequency>=863000000 && frequency<868000000) {\n        return \"g\";\n    } else if(frequency>=868000000 && frequency<868600000) {\n        return \"g1\";\n    } else if(frequency>=868700000 && frequency<869200000) {\n        return \"g2\";\n    } else if(frequency>=869400000 && frequency<869650000) {\n        return \"g3\";\n    } else if(frequency>=869700000 && frequency<870000000) {\n        return \"g4\";\n    } else {\n        return undefined;\n    }\n    /* Duty Cycle */\n    /*\n    g (863.0 – 868.0 MHz): 1%\n    g1 (868.0 – 868.6 MHz): 1%\n    g2 (868.7 – 869.2 MHz): 0.1%\n    g3 (869.4 – 869.65 MHz): 10%\n    g4 (869.7 – 870.0 MHz): 1%\n    */\n}\n\nvar p = msg.payload;\n\nvar rxInfo = p.rxInfo;\n\nvar ri = undefined;\n\nrxInfo.forEach(function(e) {\n  if(ri === undefined) {\n      ri = e;\n  } else if(e.rssi > ri.rssi) {\n      ri = e;\n  }\n});\n\nri.date = Date.now();\nri.dr = p.txInfo.dr;\nri.frequency = p.txInfo.frequency;\nri.subband = getSubBandsEU868(p.txInfo.frequency);\n// Can not compute timeonair without the frame length\n//ri.toa = TimeOnAir.getLoRaWANTimeOnAir(size, 0, ri.dr)\n\n\nri.redundancy = rxInfo.length;\n\nmsg.payload.radio = ri;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 7,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 340,
+        "wires": [
+            [
+                "39d74fedaf03d179"
+            ]
+        ]
+    },
+    {
+        "id": "27a7d2a5.b405a6",
+        "type": "link in",
+        "z": "b23a6a86.69b218",
+        "name": "",
+        "links": [
+            "16cc577e.d91489"
+        ],
+        "x": 135,
+        "y": 160,
+        "wires": [
+            [
+                "70a5a5f2.183e34",
+                "cf4442ba.bf396"
+            ]
+        ]
+    },
+    {
+        "id": "70a5a5f2.183e34",
+        "type": "function",
+        "z": "b23a6a86.69b218",
+        "name": "Convert data",
+        "func": "if(msg.payload.object) {\n    return msg;\n} else {\n    if(msg.payload.data){\n        msg.payload.frmPayload = Buffer.from(msg.payload.data, 'base64');\n        return msg;\n    } else {\n        return undefined;\n    }\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 220,
+        "wires": [
+            [
+                "75bb8655.6c744",
+                "b7a128b1.2adae"
+            ]
+        ]
+    },
+    {
+        "id": "75bb8655.6c744",
+        "type": "function",
+        "z": "b23a6a86.69b218",
+        "name": "Decode Elsys",
+        "func": "//*****************************************************************************\n// Javascript codec functions for Elsys endpoints\n// Authors: Didier Donsez, Vivien Quéma\n// Licence: EPL 1.0\n//*****************************************************************************\n\n/*\nFrom https://www.elsys.se/en/wp-content/uploads/sites/3/2016/09/Elsys-LoRa-payload_v8.pdf\n\n1 0x01 Temperature 2 ‐3276.5°C‐‐>3276.5°C (Value of: 10010.0 °C)\n2 0x02 Humidity 1 0‐100%\n3 0x03 Acceleration/level 3 X,Y,Z ‐127‐127 (63=1G)\n4 0x04 Light 2 0‐65535 Lux\n5 0x05 Motion (PIR) 1 0‐255 (Number of motion)\n6 0x06 Co2 2 0‐10000ppm\n7 0x07 Battery 2 0‐65535mV\n8 0x08 Analog1 2 0‐65535mV\n9 0x09 GPS 6 3 bytes lat, 3 bytes long,binary\n10 0x0A Pulse count 2 0‐65535\n11 0x0B Pulse count ABS 4 Absolute value 0‐4294967295\n12 0x0C External temp1 2 ‐3276.5C‐‐>3276.5C\n13 0x0D External Digital/Button 1 0,1 (on/off, down/upp)\n14 0x0E External distance 2 0‐65535mm\n15 0x0F Motion (acceleration movements) 1 0‐255\n16 0x10 External IR temperature 4 2bytes internal temp 2 bytes external, ‐3276.5C‐‐>3276.5C\n17 0x11 Occupancy 1 0‐255 (0 ‐‐> no body,1‐‐>body,2‐‐> Body)\n18 0x12 External water leak 1 0‐255\n19 0x13 Grideye (room occupancy) 65 1byte ref,64byte pixel temp 8x8 (reserved for future use)\n20 0x14 Pressure 4 Pressure data (hPa)\n21 0x15 Sound 2 Sound data,1 byte peak/ 1byte avg (dB)\n22 0x16 Pulse count 2 2 0‐65535\n23 0x17 Pulse count 2 ABS 4 Absolute value 0‐4294967295\n24 0x18 Analog2 2 0‐65535mV\n25 0x19 External temp2 2 ‐3276.5C‐‐>3276.5 °C (Value of: 10010.0 °C)\n61 0x3D Debug information 4 Data depends on debug information\n62 0x3E Sensor settings n Sensor setting sent to server at startup (first package). Sent on Port+1. See sensor settings for more information.\n\n*/\n\nconst Elsys_Payload = {\n\n  'decodeUp': function (port,payload) {\n\n    const TYPE_TEMPERATURE = 0x01;\n    const TYPE_HUMIDITY = 0x02;\n    const TYPE_ACCELERATION = 0x03;\n    const TYPE_LIGHT = 0x04;\n    const TYPE_MOTION_PIR = 0x05;\n    const TYPE_CO2 = 0x06;\n    const TYPE_BATTERY_MV = 0x07;\n    const TYPE_ANALOG1 = 0x08;\n    const TYPE_GPS = 0x09;\n    const TYPE_PULSE = 0x0A;\n    const TYPE_PULSEABS = 0x0B;\n    const TYPE_TEMPERATURE_EXTERNAL = 0x0C;\n    const TYPE_BUTTON_EXTERNAL = 0x0D;\n    const TYPE_DISTANCE_EXTERNAL = 0x0E;\n    const TYPE_MOTION_ACC = 0x0F;\n    const TYPE_TEMPERATURE_IR_EXTERNAL = 0x10;\n    const TYPE_OCCUPANCY = 0x11;\n    const TYPE_WATER_LEAK_EXTERNAL = 0x12;\n    const TYPE_OCCUPANCY_GRIDEYE = 0x13;\n    const TYPE_PRESSURE = 0x14;\n    const TYPE_SOUND = 0x15;\n    const TYPE_PULSE2 = 0x16;\n    const TYPE_PULSEABS2 = 0x17;\n    const TYPE_ANALOG2 = 0x18;\n    const TYPE_TEMPERATURE_EXTERNAL2 = 0x19;\n    // TBC\n\n\n    var value = {}\n    var p = payload;\n    var idx = 0;\n    var v;\n    while(idx < payload.length)\n    {\n        var dataType = payload[idx++];\n        console.log(idx, \"-->\", dataType);\n        switch(dataType) {\n            \n            case TYPE_TEMPERATURE:\n                v = payload.readInt16BE(idx) / 10.0;\n                idx += 2;\n                if(value.temperature) {\n                    if(value.temperatures === undefined) {\n                        value.temperatures = [];\n                        value.temperatures.push(value.temperature);\n                    }\n                    value.temperatures.push(v);\n                } else {\n                    value.temperature = v;\n                }\n                break;\n            case TYPE_HUMIDITY:\n                v = payload.readUInt8(idx);\n                idx += 1;\n                if(value.humidity) {\n                    if(value.humiditys === undefined) {\n                        value.humiditys = [];\n                        value.humiditys.push(value.humidity);\n                    }\n                    value.humiditys.push(v);\n                } else {\n                    value.humidity = v;\n                }\n                break;\n            \n            case TYPE_CO2:\n                v = payload.readUInt16BE(idx);\n                idx += 2;\n                if(value.co2) {\n                    if(value.co2s === undefined) {\n                        value.co2s = [];\n                        value.co2s.push(value.co2);\n                    }\n                    value.co2s.push(v);\n                } else {\n                    value.co2 = v;\n                }\n                break;\n                \n            case TYPE_GPS:\n                v = (payload.readUInt8BE(idx) << 16)\n                            | (payload.readUInt8BE(idx + 1) << 8)\n                            | payload.readUInt8BE(idx + 2);\n                idx += 3;\n                if(value.lat) {\n                    if(value.lats === undefined) {\n                        value.lats = [];\n                        value.lats.push(value.lat);\n                    }\n                    value.lats.push(v);\n                } else {\n                    value.lat = v;\n                }\n                \n                v = (payload.readUInt8BE(idx) << 16)\n                            | (payload.readUInt8BE(idx + 1) << 8)\n                            | payload.readUInt8BE(idx + 2);\n                idx += 3;\n                if(value.lon) {\n                    if(value.lons === undefined) {\n                        value.lons = [];\n                        value.lons.push(value.lon);\n                    }\n                    value.lons.push(v);\n                } else {\n                    value.lon = v;\n                }\n                break;\n                \n                \n            case TYPE_LIGHT:\n                v = payload.readUInt16BE(idx);\n                idx += 2;\n                if(value.light) {\n                    if(value.lights === undefined) {\n                        value.lights = [];\n                        value.lights.push(value.light);\n                    }\n                    value.lights.push(v);\n                } else {\n                    value.light = v;\n                }\n                break;\n            case TYPE_MOTION_PIR:\n                v = payload.readUInt8(idx);\n                idx += 1;\n                if(value.motion_pir) {\n                    if(value.motion_pirs === undefined) {\n                        value.motion_pirs = [];\n                        value.motion_pirs.push(value.motion_pir);\n                    }\n                    value.motion_pirs.push(v);\n                } else {\n                    value.motion_pir = v;\n                }\n                break;\n            case TYPE_ACCELERATION:\n                var x = payload.readInt8(idx);\n                var y = payload.readInt8(idx+1);\n                var z = payload.readInt8(idx+2);\n                v = [x,y,z];\n                idx += 3;\n                if(value.acceleration) {\n                    if(value.accelerations === undefined) {\n                        value.accelerations = [];\n                        value.accelerations.push(value.acceleration);\n                    }\n                    value.accelerations.push(v);\n                } else {\n                    value.acceleration = v;\n                }\n                break;\n            case TYPE_BATTERY_MV:\n                v = payload.readInt16BE(idx);\n                idx += 2;\n                if(value.batteryVoltage) {\n                    if(value.batteryVoltages === undefined) {\n                        value.batteryVoltages = [];\n                        value.batteryVoltages.push(value.batteryVoltage);\n                    }\n                    value.batteryVoltages.push(v);\n                } else {\n                    value.batteryVoltage = v;\n                }\n                break;\n            case TYPE_PRESSURE:\n                v = payload.readInt32BE(idx);\n                idx += 4;\n                 if(value.pressure) {\n                    if(value.pressures === undefined) {\n                        value.pressures = [];\n                        value.pressures.push(value.pressure);\n                    }\n                    value.pressures.push(v);\n                } else {\n                    value.pressure = v;\n                }\n                break;\n            case TYPE_TEMPERATURE_EXTERNAL:\n                v = payload.readInt16BE(idx) / 10.0;\n                idx += 2;\n                if(value.temperature_external) {\n                    if(value.temperature_externals === undefined) {\n                        value.temperature_externals = [];\n                        value.temperature_externals.push(value.temperature_external);\n                    }\n                    value.temperature_externals.push(v);\n                } else {\n                    value.temperature_external = v;\n                }\n                break;\n            default:\n                return value;\n        }\n    }\n    return value;\n\n  },\n\n  'encodeDn': function (port,value) {\n    // TO BE IMPLEMENTED\n    return null;\n  }\n}\n\n\nvar p = msg.payload;\n\nif(p.applicationName.indexOf(\"ELSYS\") !== 0) {\n    return undefined;\n}\n\nif(! p.frmPayload) {\n    return undefined;\n}\n\nvar o = Elsys_Payload.decodeUp(p.fPort,p.frmPayload);\n\nmsg.payload.object = o;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 220,
+        "wires": [
+            [
+                "5f2c34db.39ab9c",
+                "975ef738.66ae08"
+            ]
+        ]
+    },
+    {
+        "id": "975ef738.66ae08",
+        "type": "link out",
+        "z": "b23a6a86.69b218",
+        "name": "geoloc_device",
+        "mode": "link",
+        "links": [],
+        "x": 825,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "5f2c34db.39ab9c",
+        "type": "link out",
+        "z": "b23a6a86.69b218",
+        "name": "elsys",
+        "mode": "link",
+        "links": [],
+        "x": 835,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "b7a128b1.2adae",
+        "type": "function",
+        "z": "b23a6a86.69b218",
+        "name": "filter message with position",
+        "func": "var p = msg.payload;\nvar o = p.object;\nnode.log(msg.payload.radio.location.latitude);\nif(o){\n    if(o.latitude && o.longitude) {\n        return msg;\n    } else if(o.lat && o.lng) {\n        return msg;\n    }\n}\nreturn undefined;    \n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 80,
+        "wires": [
+            [
+                "975ef738.66ae08"
+            ]
+        ]
+    },
+    {
+        "id": "cf4442ba.bf396",
+        "type": "debug",
+        "z": "b23a6a86.69b218",
+        "name": "Payload CODEC",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 290,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "c394074f.57539",
+        "type": "debug",
+        "z": "8ef8462d.3e5728",
+        "name": "",
+        "active": false,
+        "console": "false",
+        "complete": "payload",
+        "x": 930,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "df40f84.4bd5288",
+        "type": "inject",
+        "z": "8ef8462d.3e5728",
+        "name": "DROP all",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 364,
+        "wires": [
+            [
+                "b55d68bc.514e7",
+                "306f3794.34742",
+                "de6ceda5.ce4768",
+                "e75b1a57.d9b12",
+                "36809190.0fa4a6"
+            ]
+        ]
+    },
+    {
+        "id": "81b74405.f01f58",
+        "type": "comment",
+        "z": "8ef8462d.3e5728",
+        "name": "Reset series by clicking on the node",
+        "info": "",
+        "x": 240,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "b55d68bc.514e7",
+        "type": "influxdb in",
+        "z": "8ef8462d.3e5728",
+        "influxdb": "70b21447.a18194",
+        "name": "DROP radio",
+        "query": "DROP MEASUREMENT radio",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "",
+        "x": 510,
+        "y": 304,
+        "wires": [
+            [
+                "c394074f.57539"
+            ]
+        ]
+    },
+    {
+        "id": "306f3794.34742",
+        "type": "influxdb in",
+        "z": "8ef8462d.3e5728",
+        "influxdb": "70b21447.a18194",
+        "name": "DROP stat",
+        "query": "DROP MEASUREMENT stat",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "",
+        "x": 510,
+        "y": 344,
+        "wires": [
+            [
+                "c394074f.57539"
+            ]
+        ]
+    },
+    {
+        "id": "de6ceda5.ce4768",
+        "type": "influxdb in",
+        "z": "8ef8462d.3e5728",
+        "influxdb": "70b21447.a18194",
+        "name": "DROP data",
+        "query": "DROP MEASUREMENT data",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "x": 510,
+        "y": 384,
+        "wires": [
+            [
+                "c394074f.57539"
+            ]
+        ]
+    },
+    {
+        "id": "e75b1a57.d9b12",
+        "type": "influxdb in",
+        "z": "8ef8462d.3e5728",
+        "influxdb": "70b21447.a18194",
+        "name": "DROP rx",
+        "query": "DROP MEASUREMENT rx",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "x": 500,
+        "y": 424,
+        "wires": [
+            [
+                "c394074f.57539"
+            ]
+        ]
+    },
+    {
+        "id": "523e40e9.b6ef48",
+        "type": "influxdb out",
+        "z": "8ef8462d.3e5728",
+        "influxdb": "70b21447.a18194",
+        "name": "radio",
+        "measurement": "radio",
+        "precision": "",
+        "retentionPolicy": "",
+        "x": 710,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "75d99a17.7324ac",
+        "type": "influxdb out",
+        "z": "8ef8462d.3e5728",
+        "influxdb": "70b21447.a18194",
+        "name": "stat",
+        "measurement": "stat",
+        "precision": "",
+        "retentionPolicy": "",
+        "x": 710,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "2a85e3e5.706ea4",
+        "type": "influxdb out",
+        "z": "8ef8462d.3e5728",
+        "influxdb": "70b21447.a18194",
+        "name": "rx",
+        "measurement": "rx",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "",
+        "retentionPolicyV18Flux": "",
+        "org": "",
+        "bucket": "",
+        "x": 710,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "5e7f86a1.457188",
+        "type": "link in",
+        "z": "8ef8462d.3e5728",
+        "name": "gatewayrx2point",
+        "links": [
+            "46436c8c.a31834"
+        ],
+        "x": 215,
+        "y": 620,
+        "wires": [
+            [
+                "5f8ee0a3.885e28"
+            ]
+        ]
+    },
+    {
+        "id": "833669c2.795cb8",
+        "type": "link in",
+        "z": "8ef8462d.3e5728",
+        "name": "object2point",
+        "links": [
+            "16cc577e.d91489"
+        ],
+        "x": 185,
+        "y": 900,
+        "wires": [
+            [
+                "d3f5d430.bbe4b"
+            ]
+        ]
+    },
+    {
+        "id": "b0589b6f.dd86a8",
+        "type": "link in",
+        "z": "8ef8462d.3e5728",
+        "name": "stat2point",
+        "links": [
+            "ad6b127f.b7f52"
+        ],
+        "x": 215,
+        "y": 560,
+        "wires": [
+            [
+                "d4727297.fac578"
+            ]
+        ]
+    },
+    {
+        "id": "e15cc6f7.169",
+        "type": "function",
+        "z": "8ef8462d.3e5728",
+        "name": "Convert radio in point",
+        "func": "var p = msg.payload;\nvar r = msg.payload.radio;\n\nvar deveui = p.devEUI;\nvar size = r.size;\n//var toa = r.toa;\n//var X_operator = r.X_operator;\n\nvar points = [];\n\n    var point = [{\n        rssi: r.rssi,\n        lsnr: r.loRaSNR,\n        size: p.size,\n        dr: r.dr,\n        redundancy: r.redundancy\n    },\n    {\n        deveui: p.devEUI,\n        deviceName: p.deviceName,\n        gatewayID: r.gatewayID,\n        datarate: r.dr,\n        appid: p.applicationID,\n        frequency: r.frequency/1000000.0,\n        region: \"eu868\",\n        subband: r.subband\n    }];\n\n    points.push(point);\n\nmsg.payload = points;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 500,
+        "wires": [
+            [
+                "523e40e9.b6ef48"
+            ]
+        ]
+    },
+    {
+        "id": "d4727297.fac578",
+        "type": "function",
+        "z": "8ef8462d.3e5728",
+        "name": "Convert stat in point",
+        "func": "var p = msg.payload;\n\nvar mac = p.mac;\n\nvar point = [{\n    rxPacketsReceived: p.rxPacketsReceived,\n    rxPacketsReceivedOK: p.rxPacketsReceivedOK,\n    txPacketsReceived: p.txPacketsReceived,\n    txPacketsEmitted: p.txPacketsEmitted\n},\n{\n    mac: p.mac\n}];\n\nif(p.latitude) point[0].latitude = p.latitude;\nif(p.longitude) point[0].longitude = p.longitude;\nif(p.altitude) point[0].alti = p.altitude;\n\nmsg.payload = point;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 480,
+        "y": 560,
+        "wires": [
+            [
+                "75d99a17.7324ac"
+            ]
+        ]
+    },
+    {
+        "id": "69db27cf.f9d1d8",
+        "type": "link in",
+        "z": "8ef8462d.3e5728",
+        "name": "radio2point",
+        "links": [
+            "16cc577e.d91489"
+        ],
+        "x": 215,
+        "y": 500,
+        "wires": [
+            [
+                "e15cc6f7.169"
+            ]
+        ]
+    },
+    {
+        "id": "87080696.c87eb",
+        "type": "inject",
+        "z": "8ef8462d.3e5728",
+        "name": "CREATE DATABASE lorawan",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "10",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 280,
+        "y": 120,
+        "wires": [
+            [
+                "28a766a8.7a1002"
+            ]
+        ]
+    },
+    {
+        "id": "fe1c2f1a.8d093",
+        "type": "comment",
+        "z": "8ef8462d.3e5728",
+        "name": "Create the database by clicking on the node",
+        "info": "",
+        "x": 270,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "28a766a8.7a1002",
+        "type": "influxdb in",
+        "z": "8ef8462d.3e5728",
+        "influxdb": "70b21447.a18194",
+        "name": "CREATE DATABASE lorawan",
+        "query": "CREATE DATABASE \"lorawan\" WITH DURATION 60d REPLICATION 1 SHARD DURATION 1h NAME \"sixty_days\"",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "",
+        "x": 560,
+        "y": 120,
+        "wires": [
+            [
+                "b829fa16.a0768"
+            ]
+        ]
+    },
+    {
+        "id": "b829fa16.a0768",
+        "type": "debug",
+        "z": "8ef8462d.3e5728",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 910,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "b23a180e.9ebe18",
+        "type": "inject",
+        "z": "8ef8462d.3e5728",
+        "name": "DROP DATABASE lorawan",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 270,
+        "y": 197,
+        "wires": [
+            [
+                "ff008771.e0032"
+            ]
+        ]
+    },
+    {
+        "id": "ff008771.e0032",
+        "type": "influxdb in",
+        "z": "8ef8462d.3e5728",
+        "influxdb": "70b21447.a18194",
+        "name": "DROP DATABASE lorawan",
+        "query": "DROP DATABASE \"lorawan\"",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "",
+        "x": 560,
+        "y": 197,
+        "wires": [
+            [
+                "46b54aaf.b964cc"
+            ]
+        ]
+    },
+    {
+        "id": "46b54aaf.b964cc",
+        "type": "debug",
+        "z": "8ef8462d.3e5728",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 910,
+        "y": 197,
+        "wires": []
+    },
+    {
+        "id": "26bb9b.c5eea466",
+        "type": "comment",
+        "z": "8ef8462d.3e5728",
+        "name": "Drop the database by clicking on the node",
+        "info": "",
+        "x": 260,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "5f8ee0a3.885e28",
+        "type": "function",
+        "z": "8ef8462d.3e5728",
+        "name": "Convert rx in point",
+        "func": "var p = msg.payload;\n\nvar phyPayloadBuffer = p.phyPayloadBuffer;\n\nvar rxInfo = p.rxInfo;\n\nvar point = [{\n    size: phyPayloadBuffer.length,\n    rssi: rxInfo.rssi,\n    lsnr: rxInfo.loRaSNR,\n    toa: rxInfo.toa\n},\n{\n    mac: rxInfo.mac,\n    frametype: p.frametype,\n    operator: p.operator,\n    frequency: rxInfo.frequency,\n    dr: rxInfo.dr,\n    subband: rxInfo.subband,\n    sf: rxInfo.dataRate.spreadFactor,\n    bw: rxInfo.dataRate.bandwidth\n}];\n\nif (p.devaddr) {\n    point[1].devaddr = p.devaddr;\n    point[1].operator = p.operator;\n    point[1].confirmed = p.confirmed;\n\n    msg.payload = point;\n    return msg;\n    \n} else if (p.deveui) {\n    point[1].deveui = p.deveui;\n    point[1].appeui = p.appeui;\n\n    msg.payload = point;\n    return msg;\n\n} else {\n    return undefined;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 470,
+        "y": 620,
+        "wires": [
+            [
+                "2a85e3e5.706ea4",
+                "332fc1a7.e06e1e"
+            ]
+        ]
+    },
+    {
+        "id": "a519db65.4d21b8",
+        "type": "influxdb out",
+        "z": "8ef8462d.3e5728",
+        "influxdb": "70b21447.a18194",
+        "name": "data",
+        "measurement": "data",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "",
+        "retentionPolicyV18Flux": "",
+        "org": "",
+        "bucket": "",
+        "x": 810,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "7ee603e8.d44f24",
+        "type": "influxdb out",
+        "z": "8ef8462d.3e5728",
+        "influxdb": "70b21447.a18194",
+        "name": "tx",
+        "measurement": "tx",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "",
+        "retentionPolicyV18Flux": "",
+        "org": "",
+        "bucket": "",
+        "x": 710,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "f821fb9e.713c38",
+        "type": "function",
+        "z": "8ef8462d.3e5728",
+        "name": "Convert tx in point",
+        "func": "var p = msg.payload;\n\nvar txInfo = p.txInfo;\nvar point = [{\n    size: txInfo.size,\n    toa: txInfo.toa,\n    power: txInfo.power\n},\n{\n    mac: txInfo.mac,\n    frequency: txInfo.frequency,\n    subband: txInfo.subband,\n    sf: txInfo.dataRate.spreadFactor,\n    bw: txInfo.dataRate.bandwidth,\n    dr: txInfo.dr\n}];\n\nmsg.payload = point;\nreturn msg;\n    \n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 680,
+        "wires": [
+            [
+                "7ee603e8.d44f24",
+                "55964523.ab106c"
+            ]
+        ]
+    },
+    {
+        "id": "9407cfb0.3e17b8",
+        "type": "link in",
+        "z": "8ef8462d.3e5728",
+        "name": "gatewaytx2point",
+        "links": [
+            "b8435984.1c1a1"
+        ],
+        "x": 215,
+        "y": 680,
+        "wires": [
+            [
+                "f821fb9e.713c38"
+            ]
+        ]
+    },
+    {
+        "id": "36809190.0fa4a6",
+        "type": "influxdb in",
+        "z": "8ef8462d.3e5728",
+        "influxdb": "70b21447.a18194",
+        "name": "DROP tx",
+        "query": "DROP MEASUREMENT tx",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "",
+        "x": 500,
+        "y": 463,
+        "wires": [
+            [
+                "c394074f.57539"
+            ]
+        ]
+    },
+    {
+        "id": "55964523.ab106c",
+        "type": "debug",
+        "z": "8ef8462d.3e5728",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "332fc1a7.e06e1e",
+        "type": "debug",
+        "z": "8ef8462d.3e5728",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "d3f5d430.bbe4b",
+        "type": "function",
+        "z": "8ef8462d.3e5728",
+        "name": "Convert object ELSYS in point",
+        "func": "var p = msg.payload;\n\nvar o = p.object;\n\nif(o) {\n    var point = [\n        o,\n        {\n            devEUI: p.devEUI,\n            applicationID: p.applicationID,\n            deviceName: p.deviceName,\n            applicationName: p.applicationName\n        }\n    ];\n    \n    msg.payload = point;\n    return msg;\n} else {\n    return undefined;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 900,
+        "wires": [
+            [
+                "a519db65.4d21b8",
+                "ac55a2d4.829ab"
+            ]
+        ]
+    },
+    {
+        "id": "ac55a2d4.829ab",
+        "type": "debug",
+        "z": "8ef8462d.3e5728",
+        "name": "ELSYS convert in Point",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "d4983c89036c2308",
+        "type": "function",
+        "z": "8ef8462d.3e5728",
+        "name": "Convert object AURA in point",
+        "func": "\nvar p = msg.payload;\n\nif (p.object) {\n    var o = p.object.data;\n}\n\nif(o) {\n    var point = [\n        o,\n        {\n            devEUI: p.devEUI,\n            applicationID: p.applicationID,\n            deviceName: p.deviceName,\n            applicationName: p.applicationName\n            \n        }\n    ];\n    \n    msg.payload = point;\n    return msg;\n} else {\n    return undefined;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 940,
+        "wires": [
+            [
+                "edb2aad22c052c4a",
+                "a519db65.4d21b8"
+            ]
+        ]
+    },
+    {
+        "id": "f0039d996a2cd5e0",
+        "type": "link in",
+        "z": "8ef8462d.3e5728",
+        "name": "object2pointAura",
+        "links": [
+            "39d74fedaf03d179"
+        ],
+        "x": 185,
+        "y": 940,
+        "wires": [
+            [
+                "d4983c89036c2308"
+            ]
+        ]
+    },
+    {
+        "id": "edb2aad22c052c4a",
+        "type": "debug",
+        "z": "8ef8462d.3e5728",
+        "name": "AURA_Convert_In_Point",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 1000,
+        "wires": []
+    }
+]
