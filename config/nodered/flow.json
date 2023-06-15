@@ -24,7 +24,7 @@
         "id": "f75893bf.fe0438",
         "type": "mqtt-broker",
         "name": "campusiot",
-        "broker": "lns.campusiot.imag.fr",
+        "broker": "",
         "port": "8883",
         "tls": "e038e18.c53e52",
         "clientid": "",
@@ -510,6 +510,32 @@
                 "39d74fedaf03d179"
             ]
         ]
+    },
+    {
+        "id": "594318da3d726c4d",
+        "type": "inject",
+        "z": "74429ff4.4ff848",
+        "name": "fakeData",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"applicationID\":\"153\",\"applicationName\":\"ELSYS_ERS_CO2\",\"deviceName\":\"sensor_42\",\"devEUI\":\"a81758fffe064242\",\"rxInfo\":[{\"gatewayID\":\"7076ff0056004242\",\"uplinkID\":\"79c28c9b-cd41-456f-847e-48e195124242\",\"name\":\"ISTATION_0503F4_IGE\",\"rssi\":-116,\"loRaSNR\":1.2,\"location\":{\"latitude\":45.19408416748047,\"longitude\":5.76228666305542,\"altitude\":233}},{\"gatewayID\":\"0000024b08064242\",\"uplinkID\":\"9c29ca93-4242-4260-bf69-9316c0ee3a56\",\"name\":\"KER_IM2AG\",\"rssi\":-85,\"loRaSNR\":9,\"location\":{\"latitude\":45.1938630320877,\"longitude\":5.768165559062278,\"altitude\":220}},{\"gatewayID\":\"7076ff0056054242\",\"uplinkID\":\"4a2b5a93-8525-45e1-9f88-ddbef57d4242\",\"name\":\"ISTATION_IMAG\",\"rssi\":-111,\"loRaSNR\":6.8,\"location\":{\"latitude\":45.190494537353516,\"longitude\":5.767123222351074,\"altitude\":247}}],\"txInfo\":{\"frequency\":867900000,\"dr\":5},\"adr\":true,\"fCnt\":91002,\"fPort\":5,\"data\":\"AQEUAi0EAS8FAAYCAgcOTA==\",\"object\":{\"co2\":514,\"dewpoint\":14.580950005119409,\"humidity\":45,\"light\":303,\"motion\":0,\"temperature\":27.6,\"vdd\":3665}}",
+        "payloadType": "str",
+        "x": 180,
+        "y": 260,
+        "wires": [
+            [
+                "307acbac.e21424"
+            ]
+        ],
+        "info": "structure des données transmises similaires à un message recu depuis lns:\n\nmsg.payload : array[2]\narray[2]\n    0: object\n        co2: 514\n        dewpoint: 14.580950005119409\n        humidity: 45\n        light: 303\n        motion: 0\n        temperature: 27.6\n        vdd: 3665\n    1: object\n        devEUI: \"a81758fffe064242\"\n        applicationID: \"153\"\n        deviceName: \"sensor_42\"\n        applicationName: \"ELSYS_ERS_CO2\""
     },
     {
         "id": "27a7d2a5.b405a6",
