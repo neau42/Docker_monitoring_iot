@@ -1,8 +1,10 @@
 #!/bin/bash
 # Deployment Docker d'infra monitoring IOT
 # DOC/TUTO https://github.com/CampusIoT/tutorial/tree/master/nodered
-# placer les fichiers docker dans le dossier ~/Docker 
+#
+# Placer les fichiers docker dans le dossier ~/Docker 
 # Docker et Docker-compose doivent etre installés
+# L'utilisateur doit etre sudoers
 
 if [[ "$(whereis docker | grep /)" != "" && "$(whereis docker-compose | grep /)" != "" ]]; then 
     echo "Docker installe ok"
@@ -17,6 +19,12 @@ else
     echo "Erreur: les fichiers Docker doivent être dans ~/Docker"
     exit
 fi
+sudo ls >/dev/null 2>&1
+if [[ "$?" != "0" ]] ; then
+  echo "Erreur: l'utilisateur doit pouvoir utiliser sudo"
+  exit
+fi
+
 # creer le dossier binde pour influx
 sudo mkdir -p /data/influx
 sudo chown -R $USER:$USER /data
@@ -78,20 +86,20 @@ docker-compose restart nodered
 
 IP="$(hostname -I | cut -d ' ' -f1)"
 
-echo -e " ==========================================
+echo -e "==========================================
 ========= Installation terminiée =========
-=========================================
-Pour visualiser les containers actifs : 'docker ps'
-Pour arreter la composition Docker : 'docker-compose down'
-Pour démarrer la composition Docker : 'docker-compose up -d'
-Les Fichiers influxDB et nodered bindés aux conteneurs sont dans le dossier /data)
-(les commandes 'docker-compose' doivent etre executées depuis le dossier ~/Docker)
-\tAcces au services:
-=== NODERED ===\n\thttp://$IP:1880
-\tAuthentification: utilisateur administrateur et mot de passe definis plus tot (le compte utilisateur peute etre utile pour un acces a d'autres panneaux nodered comme /ui)
-=== GRAFANA ===\n\thttp://$IP
-\tAuthentification: utilisateur: 'admin' mot de passe defini plus tot
-=== INFLUXDB API ===\n\thttp://$IP:8086
-=========================================
+==========================================
+Les Fichiers influxDB et nodered bindés aux conteneurs sont dans le dossier /data
 
+Visualiser les containers actifs : 'docker ps'
+Arreter la composition Docker : 'docker-compose down'
+Démarrer la composition Docker : 'docker-compose up -d'
+(les commandes 'docker-compose' doivent etre executées depuis le dossier ~/Docker)
+Acces au services:
+================ NODE-RED ================\n\thttp://$IP:1880
+\tAuthentification: utilisateur administrateur et mot de passe definis plus tot (le compte utilisateur peute etre utile pour un acces a d'autres panneaux nodered comme /ui)
+================ GRAFANA  ================\n\thttp://$IP
+\tAuthentification: utilisateur: 'admin' mot de passe defini plus tot
+============== INFLUXDB API ==============\n\thttp://$IP:8086
+==========================================
 \n\nPlus d'informations de configuration disponibles sur le depot de CampusIOT https://github.com/CampusIoT/tutorial/tree/master/nodered"
