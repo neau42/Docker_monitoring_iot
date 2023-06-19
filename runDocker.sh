@@ -12,6 +12,14 @@ else
     echo "Erreur: docker et docker-compose doivent etre installés"
     exit
 fi
+
+if [[ "$(groups | grep docker)" == "" ]] ; then
+    echo "Erreur: $USER n'est pas dans le groupe docker"
+    exit
+else
+    echo "$USER dans le groupe docker"
+fi
+
 if  [[ "$PWD" == "$HOME/Docker" && "$(ls . | grep 'grafana.yml\|influxdb.yml')" == "grafana.yml
 influxdb.yml" ]] ; then
     echo "Fichiers de configuration présents"
@@ -35,7 +43,17 @@ sudo chown 1000:1000 /data/nodered
 #le user de noderedDocker a forcement l'ID 1000 -_-'
 
 #creer un volume Docker persistant pour Grafana
-docker volume create --name=grafana-storage
+if [[ "$(docker volume ls -q| grep 'grafana-storage')" == "" ]] ; then
+    docker volume create --name=grafana-storage
+    echo "Volume \"grafana-storage\" créé"
+else
+    echo "Volume docker \"grafana-storage\" existe"
+    read -p "Réinitialiser ce volume? (Yes/No) " yn
+    case $yn in
+    [Yy]es )  docker volume rm grafana-storage; docker volume create --name=grafana-storage;echo "Volume \"grafana-storage\" créé";;
+        * ) echo "non";;
+    esac
+fi
 
 #copier le fichier de conf influx
 mv ./config/influxdb.conf /data/.
