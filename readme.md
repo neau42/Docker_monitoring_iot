@@ -8,17 +8,18 @@ Le script runDocker.sh permet de faciliter l'instaciation de la compostion docke
 - Ce dossier doit se nommer ~/Docker
 
 
-### Execution
+### Execution:
 Une fois ces prérequis validés, exécuter le script runDocker.sh
 Il demande de créer plusieurs comptes et mots de passes pour grafana et influx, puis demande d'executer la composition pour initier les comptes utilisateurs de nodered.
 Une fois l'installation terminée il affiche un recapitulatif des conteneurs actifs.
 
-### Rappels pour docker:
+#### Rappels pour docker:
 - `docker ps` : liste les conteneurs actifs
 - `docker rm $ID` : supprime le conteneur "$ID"
 - `docker rm $(docker ps -aq)` : supprime tous les conteneurs
 
-### rappel pour docker-compose: (doit être exécuté depuis le dossier ou est le fichier docker compose (~/Docker))
+#### rappel pour docker-compose:
+#### doit être exécuté depuis le dossier ou est le fichier docker compose (~/Docker)
 - `docker-compose up -d` : lance les conteneurs de la composition
 - `docker-compose down` : arrête les conteneurs
 - `docker-compose logs -f ` : affiche les logs des conteneurs
