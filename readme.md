@@ -10,8 +10,13 @@ Le script runDocker.sh permet de faciliter l'instaciation de la compostion docke
 
 ### Execution:
 Une fois ces prérequis validés, exécuter le script runDocker.sh
+
 Il demande de créer plusieurs comptes et mots de passes pour grafana et influx, puis demande d'executer la composition pour initier les comptes utilisateurs de nodered.
+
 Une fois l'installation terminée il affiche un recapitulatif des conteneurs actifs.
+
+Les Fichiers influxDB et nodered bindés aux conteneurs sont dans le dossier /data
+
 
 #### Rappels pour docker:
 - `docker ps` : liste les conteneurs actifs
