@@ -96,16 +96,16 @@ Puis chercher "influx"
 
 <img src='./readme/grafana2.png' width='500'>
 
-Et cliqeur sur create influx data sources
+Et cliquer sur create a influxDB data sources
 
 <img src='./readme/grafana3.png' width='500'>
 
 renseigner les informations comme ci dessous:
 
-<img src='./readme/grafana4.png' width='500'>
+<img src='./readme/grafana4.png' width='800'>
 veiller à renseigner "http://" dans l'URL puis "influxdb" qui est le nom du conteneur et le port d'influxdb : 8086
 
-<img src='./readme/grafana5.png' width='500'>
+<img src='./readme/grafana5.png' width='800'>
 
 l'enregistrement de cette base effectue un test de connexion.
 
