@@ -86,3 +86,26 @@ De la même maniere le formatage des données peut être modifié pour correspon
 Une fois ces configurations déployées node red est pret à faire transiter les messages vers la base.
 
 ### Dashboard Grafana
+### connexion à la base de données influxDB
+Pour ajouter une base de données il faut aller dans l'onglet connections:
+
+<img src='./readme/grafana1.png' width='500'>
+
+Puis chercher "influx"
+
+<img src='./readme/grafana2.png' width='500'>
+
+Et cliqeur sur create influx data sources
+
+<img src='./readme/grafana3.png' width='500'>
+
+renseigner les informations comme ci dessous:
+
+<img src='./readme/grafana4.png' width='500'>
+veiller à renseigner "http://" dans l'URL puis "influxdb" qui est le nom du conteneur et le port d'influxdb : 8086
+
+<img src='./readme/grafana5.png' width='500'>
+
+l'enregistrement de cette base effectue un test de connexion.
+
+Une fois valider on peut commencer à créer des dashboards:
