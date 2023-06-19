@@ -29,7 +29,7 @@ Les Fichiers influxDB et nodered bindés aux conteneurs sont dans le dossier /da
 - `docker-compose down` : arrête les conteneurs
 - `docker-compose logs -f ` : affiche les logs des conteneurs
 - `docker-compose logs -f --tail=100 influxdb` : affiche les logs (avec 100 lignes d'historique) du conteneur nommé influxdb
-- `docker compose restart influxdb` : redémarre le conteneur nommé influxdb
+- `docker-compose restart influxdb` : redémarre le conteneur nommé influxdb
 
 ## configuration
 ### initier la base de donnée
