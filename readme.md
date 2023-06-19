@@ -96,17 +96,52 @@ Puis chercher "influx"
 
 <img src='./readme/grafana2.png' width='800'>
 
-Et cliquer sur create a influxDB data sources
+Et cliquer sur "create a influxDB data sources"
 
 <img src='./readme/grafana3.png' width='800'>
 
 renseigner les informations comme ci dessous:
 
 <img src='./readme/grafana4.png' width='1000'>
-veiller à renseigner "http://" dans l'URL puis "influxdb" qui est le nom du conteneur et le port d'influxdb : 8086
+Dans l'URL veiller à renseigner "http://" puis "influxdb" qui est le nom du conteneur et le port d'influxdb : 8086
 
 <img src='./readme/grafana5.png' width='1000'>
 
 l'enregistrement de cette base effectue un test de connexion.
 
-Une fois valider on peut commencer à créer des dashboards:
+#### Création de graphique:
+Il faut créer un "dashboard" qui contiendra un ou plusieurs graphiques:
+
+<img src='./readme/grafana6.png' width='800'>
+
+Puis créer une premiere "visualization":
+
+<img src='./readme/grafana7.png' width='800'>
+
+La page de création comporte 3 parties,le rendu visuel en haut à gauche, la ou les requêtes en bas à gauche et la mise en forme à droite
+
+<img src='./readme/grafana8.png' width='800'>
+
+
+si le "query language" defini lors de connexion à la base est "influxQL" les requetes s'ecrivent dans un langage proche de sql, et outils graphique peut aider à les concevoir, en cliquant sur les cases les champs nous sont proposés
+
+<img src='./readme/grafana9.png' width='800'>
+
+
+ce bouton permet de passer à la requête en format textuel:
+
+<img src='./readme/grafana10.png' width='800'>
+
+<img src='./readme/grafana11.png' width='800'>
+
+
+Pour plus de flexibilités dans les graphiques il est possible de créer des variables depuis une requetes, via les parametres du dashboard:
+<img src='./readme/grafana12.png' width='800'>
+
+Elles pourront ensuite être utilisées pour automatiser les rendus de divers capteurs
+
+utilisation de variable: https://grafana.com/blog/2020/06/09/learn-grafana-how-to-automatically-repeat-rows-and-panels-in-dynamic-dashboards/
+
+
+la documentation officielle est disponible ici https://grafana.com/docs/ 
+
