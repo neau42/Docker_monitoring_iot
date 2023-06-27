@@ -34,7 +34,7 @@ if [[ "$?" != "0" ]] ; then
 fi
 
 # creer le dossier binde pour influx
-sudo mkdir -p /data/influx
+sudo mkdir -p /data/influxdb
 sudo chown -R $USER:$USER /data
 
 # creer le dossier binde pour nodered
