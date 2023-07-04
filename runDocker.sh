@@ -73,9 +73,9 @@ echo -e "\tMot de passe remplacé dans grafana.yml"
 
 echo "== CONFIG INFLUXDB =="
 read -p "Nom d'utilisateur administrateur InfluxDB? " admin_user_influxdb
-read -p "Mot de passe pour \"$admin_user_influxdb\" InfluxDB? " admin_pass_influxdb
+read -sp "Mot de passe pour \"$admin_user_influxdb\" InfluxDB? " admin_pass_influxdb
 read -p "Nom d'utilisateur standard InfluxDB? " std_user_influxdb
-read -p "Mot de passe pour \"$std_user_influxdb\" InfluxDB? " std_pass_influxdb
+read -sp "Mot de passe pour \"$std_user_influxdb\" InfluxDB? " std_pass_influxdb
 
 
 sed -i -e "s/INFLUXDB_ADMIN_USER:.*/INFLUXDB_ADMIN_USER: $admin_user_influxdb/" \
@@ -97,8 +97,8 @@ docker-compose up -d
 #NODERED
 # apres le lancement du container via la commande 
 echo "== CONFIG NODERED =="
-read -p "Mot de passe administrateur Nodered? " admin_pass_nodered
-read -p "Mot de passe utilisateur Nodered? " user_pass_nodered
+read -sp "Mot de passe administrateur Nodered? " admin_pass_nodered
+read -sp "Mot de passe utilisateur Nodered? " user_pass_nodered
 docker-compose exec nodered /data/set_password.sh $admin_pass_nodered $user_pass_nodered
 docker-compose restart nodered
 
