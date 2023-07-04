@@ -62,7 +62,7 @@ mv ./config/influxdb.conf /data/.
 #        pass: dans le fichier ~/Docker/grafana.yml ( definir la variable GF_SECURITY_ADMIN_PASSWORD )
 
 echo "== CONFIG GRAFANA =="
-read -p "Mot de passe \"admin\" Grafana? " pass_grafana
+read -sp "Mot de passe \"admin\" Grafana? " pass_grafana
 
 sed -i "s/GF_SECURITY_ADMIN_PASSWORD:.*/GF_SECURITY_ADMIN_PASSWORD: $pass_grafana/" grafana.yml
 echo -e "\tMot de passe remplacé dans grafana.yml"
