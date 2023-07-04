@@ -1,10 +1,10 @@
 # Docker Grafana Influx Nodered
 
-Le script runDocker.sh permet de faciliter l'instaciation de la compostion docker.
+Le script runDocker.sh permet de faciliter l'instanciation de la compostion docker.
 
 ### Prérequis:
-- docker et docker compose doivent être installés (`apt install docker docker-compose`)
-- L'utilisateur doit être dans les groupes sudo et docker (`usermod -aG sudo $USER && usermod -aG docker $USER`)
+- **docker** et **docker compose** doivent être installés (`apt install docker docker-compose`)
+- L'utilisateur doit être dans les groupes **sudo** et **docker** (`usermod -aG sudo $USER && usermod -aG docker $USER`)
 - Ce dossier doit se nommer ~/Docker
 
 
@@ -33,14 +33,14 @@ Les Fichiers influxDB et nodered bindés aux conteneurs sont dans le dossier /da
 
 ## configuration
 ### initier la base de donnée
-Depuis nodered http://$IP:1880
-se connecter avec le compte administrateur initié plus tot
-Depuis l'onglet Save Data cliquer sur un block en lien avec influxDB comme "CREATE DATABASE lorawan"
+Depuis nodered **http://$IP:1880** se connecter avec le compte administrateur initié plus tot.
+
+Depuis l'onglet **Save Data** cliquer sur un bloc en lien avec influxDB comme "CREATE DATABASE lorawan"
 
 <img src='./readme/nodered_influx1.png' width='800'>
 
 
-On peut voir ici le nom du conteneur et le port influxDB prérempli ainsi que la commade "create database" qui sera executé en cliquant sur le node.
+On peut voir ici le nom du conteneur et le port influxDB prérempli ainsi que la commade "create database" qui sera executée en cliquant sur le node.
 
 <img src='./readme/nodered_influx2.png' width='800'>
 
@@ -49,13 +49,13 @@ Cliquer sur le crayon à coté de ce nom pour renseigner les informations d'auth
 
 <img src='./readme/nodered_influx3.png' width='800'>
 
-Ensuite on peut deployer ces modifs via le bouton "deploy" en haut à droit de nodered
+Ensuite on peut deployer ces modifs via le bouton "deploy" en haut à droite de nodered.
 
-On va maintenant pouvoir créer la base de données via le node, ce bouton execute la commande vu précedement dans le block suivant sur la même ligne
+On va maintenant pouvoir créer la base de données via le node, ce bouton exécute la commande vu précedement dans le bloc suivant sur la même ligne.
 
 <img src='./readme/nodered_influx4.png' width='800'>
 
-Il est possible de suivre les logs de influxDB avec la commande `docker-compose logs -f influxdb` sur le serveur pour confirmer la création de la base
+Il est possible de suivre les logs de influxDB avec la commande `docker-compose logs -f influxdb` sur le serveur pour confirmer la création de la base.
 
 ### initier la connexion mqtt avec CampusIOT
 Toujours depuis nodered à l'onglet "Collect Messages"
@@ -68,7 +68,8 @@ Puis sur le crayon proche du nom du serveur campusiot
 <img src='./readme/nodered_ciot2.png' width='800'>
 
 On peut ici changer le topic et le ca.crt pour la configuration SSL.
-Le certificat se récupère au moyen de wget https://raw.githubusercontent.com/CampusIoT/campusiot-certs/master/mqtt/ca.crt
+
+Le certificat peut se récupèrer avec la commande `wget https://raw.githubusercontent.com/CampusIoT/campusiot-certs/master/mqtt/ca.crt`
 
 plus d'info ici : https://github.com/CampusIoT/tutorial/tree/master/nodered#etape-1-journaliser-le-flot-mqtt-de-messages-dans-un-fichier-avec-nodered
 
@@ -105,14 +106,14 @@ Et cliquer sur "create a influxDB data sources"
 
 <img src='./readme/grafana3.png' width='800'>
 
-renseigner les informations comme ci dessous:
+Renseigner les informations comme ci dessous:
 
 <img src='./readme/grafana4.png' width='1000'>
-Dans l'URL veiller à renseigner "http://" puis "influxdb" qui est le nom du conteneur et le port d'influxdb : 8086
+Dans l'URL veiller à renseigner "http://" puis "influxdb" (qui correspond au nom du conteneur) et le port d'influxdb : 8086
 
 <img src='./readme/grafana5.png' width='1000'>
 
-l'enregistrement de cette base effectue un test de connexion.
+L'enregistrement de cette base effectue un test de connexion.
 
 #### Création de graphique:
 Il faut créer un "dashboard" qui contiendra un ou plusieurs graphiques:
@@ -128,7 +129,7 @@ La page de création comporte 3 parties,le rendu visuel en haut à gauche, la ou
 <img src='./readme/grafana8.png' width='800'>
 
 
-si le "query language" defini lors de connexion à la base est "influxQL" les requetes s'ecrivent dans un langage proche de sql, et outils graphique peut aider à les concevoir, en cliquant sur les cases les champs nous sont proposés
+si le "query language" defini lors de connexion à la base est "influxQL" les requetes s'écrivent dans un langage proche de sql, et un outil graphique peut aider à les concevoir, en cliquant sur les cases les champs sont proposés
 
 <img src='./readme/grafana9.png' width='800'>
 
@@ -145,7 +146,7 @@ Pour plus de flexibilités dans les graphiques il est possible de créer des var
 
 Elles pourront ensuite être utilisées pour automatiser les rendus de divers capteurs
 
-utilisation de variable: https://grafana.com/blog/2020/06/09/learn-grafana-how-to-automatically-repeat-rows-and-panels-in-dynamic-dashboards/
+Utilisation de variable: https://grafana.com/blog/2020/06/09/learn-grafana-how-to-automatically-repeat-rows-and-panels-in-dynamic-dashboards/
 
 
 la documentation officielle est disponible ici https://grafana.com/docs/ 
